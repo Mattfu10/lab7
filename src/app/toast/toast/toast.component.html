@@ -1,0 +1,9 @@
+
+<div *ngIf="toasts.length > 0" class="toast-container">
+    <alert [dismissable]="true" [type]="danger" *ngFor="let toasts of toasts">
+{{toast.message}}
+    </alert>
+</div>
+
+
+
